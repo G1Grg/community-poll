@@ -23,7 +23,7 @@ class ShowRoomsController extends Controller
         //     $rooms = Room::get();
         // }
         // after using scope
-        $rooms = Room::byType($roomType)->withTrashed()->get();
+        $rooms = Room::byType($roomType)->get();
         return view ('rooms.index',['rooms'=>$rooms]);
        
     }

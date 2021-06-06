@@ -19,7 +19,7 @@ class BookingController extends Controller
     public function index()
     {   
         //show all the data that are deleted 
-        Booking::withTrashed()->get()->dd();
+        // Booking::withTrashed()->get()->dd();
         $bookings=Booking::paginate();
         return view('bookings.index')
                 ->with('bookings',$bookings);

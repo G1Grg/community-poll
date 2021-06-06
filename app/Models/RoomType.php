@@ -12,6 +12,6 @@ class RoomType extends Model
         return this->hasOne('App\Room');
     }
     public function rooms(){
-        return this->hasMany('App\Room','id','rppm_type_id');
+        return this->hasMany('App\Room','id','room_type_id');
     }
 }

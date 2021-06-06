@@ -10,8 +10,8 @@
         <tbody>
             @foreach ($rooms as $room)
                 <tr>
-                    <td> {{$room->number}}</td>
-                    <td> {{$room->roomType->name}}</td>
+                    <td> {{ $room->number }}</td>
+                    <td> {{ $room->roomType->name }}</td>
                 </tr>
             @endforeach
         </tbody>
