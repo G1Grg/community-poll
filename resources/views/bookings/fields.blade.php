@@ -71,3 +71,6 @@
         <input type="hidden" name="is_reservation" value="1"/>
     
         @csrf
+        @foreach ($booking->users as $users )
+            <p> {{$user->name}}</p>
+        @endforeach
